@@ -9,23 +9,22 @@
     margin: 0px;
 }
 
-body{
-    height: 100vh;
+ html, body, main{
+    min-height: 100vh;
 }
 
 /* Inicio header*/
 
 header{
-    padding: 50px;
     background-color: rgb(0, 0, 0);
 }
 
 header h1{
     color: white;
+    padding-top: 50px;
     font-family: 'Passion One', sans-serif;
-    font-weight: 700;
     text-align: center;
-    font-size: 4.5em;
+    font-size: 10vw;
 
 }
 
@@ -33,6 +32,7 @@ header p{
     color: white;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 50px;
 }
 
 header a{
@@ -53,21 +53,19 @@ header a:active{
 /* Início main */
 section{
     background-color: white;
-    margin-top: 100px;
-    padding-bottom: 110px;
-    
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    font-size: 3.5vw;
+    font-family: 'Sriracha', cursive;
+}
+
+section p{
+    padding-bottom: 2em;
 }
 
 section p.sem-imagem{
-    margin-left: 30px;
-}
-
-p#estrofe4{
-    margin-top: 70px;
-}
-
-p#ultima-estrofe{
-    margin-top: 70px;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
 section#background1{
@@ -75,7 +73,6 @@ section#background1{
     background-size: cover;
     background-position: right center;
     background-attachment: fixed;
-    padding-top: 110px;
     color: white;
 }
 
@@ -84,22 +81,16 @@ section#background2{
     background-size: cover;
     background-position: left bottom;
     background-attachment: fixed;
-    padding-top: 110px;
     color: white;
 }
 
 div{
-    width: 382px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.511);
+    line-height: 2em;
+    padding: 5px;
     margin-left: 30px;
-    padding-left: 5px;
 }
-
-section p{
-    font-family: 'Sriracha', sans-serif;
-    font-size: 2em;
-}
-
 /* Fim main */
 
 footer{
