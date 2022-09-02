@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulários</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+
+        <p>
+            <label for="cor-id">Cor: </label>
+            <input type="color" name="cor" id="cor-id" value="#fa1235">
+        </p>
+
+        <p>
+            <label for="nivel-id">Nível de satisfação</label>
+            <input type="range" name="nivel" id="nivel-id" min="1" max="10">
+        </p>
+
+        <p>
+            <label for="arquivo-id">Foto de perfil: </label>
+            <input type="file" name="arquivo" id="arquivo-id">
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
