@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+    Typical Devices Breakpoints 2022 by w3schools.com
+
+    Telas muito pequenas: até 600px (Celulares)
+    Telas pequenas: 600px até 768px (Celulares)
+    Telas médias: 768px até 992px (Tablets)
+    Telas grandes: 992px até 1200px (Desktops)
+    Telas muito grandes: mais que 1200px (Tvs)
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
