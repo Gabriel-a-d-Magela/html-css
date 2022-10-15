@@ -43,6 +43,24 @@ header > nav {
     padding: 10px 0px 0px 0px;
 }
 
+header > nav > ul {
+    display: none;
+}
+
+span#burguer {
+    background-color: #063d1e;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    cursor: pointer; 
+}
+
+span#burguer:hover {
+    background-color: #3ddc84;
+    color: black;
+}
+
 header > nav > ul > a {
     display: block;
     border: 1px solid black;
@@ -81,12 +99,29 @@ main > section p {
     padding: 10px;
 }
 
+main strong {
+    color: #1a5c37;
+    font-weight: bold;
+}
+
 main > section > h3 {
     padding: 5px;
     margin-left: 5px;
     font-family: "android";
     color: #1a5c37;
     background-image: linear-gradient(to right, #83e1ad, #ffffff);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #063d1e;
+    background-color: lightgrey;
+    padding: 2px 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 main > section > img {
@@ -103,6 +138,7 @@ main > div.video {
     padding-bottom: 56.25%;
     padding-top: 25px;
     overflow: hidden;
+    border: 20px solid #063d1e;
 }
 
 main > div.video > iframe {
@@ -111,6 +147,59 @@ main > div.video > iframe {
     left: 0px;
     width: 100%;
     height: 100%;
+}
+
+aside {
+    background-color: #83e1ad;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.211);
+}
+
+aside > h3 {
+    padding: 10px;
+    background-color: #1a5c37;
+    color: white;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.211);
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside p {
+    text-align: justify;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+aside > ul {
+    margin-left: 15px;
+    list-style-position: inside;
+    columns: 2;
+}
+
+p#penultimo_paragrafo {
+    text-align: justify;
+    text-indent: 10px;
+    padding: 10px;
+
+}
+
+footer {
+    background-color: #1a5c37;
+    padding: 15px;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 
