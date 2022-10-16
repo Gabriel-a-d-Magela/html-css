@@ -68,6 +68,7 @@ header > nav > ul > a {
     padding: 10px;
     text-decoration: none;
     color: white;
+    list-style-type: none;
 }
 
 header > nav > ul > a:hover {
