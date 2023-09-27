@@ -8,50 +8,90 @@
 </head>
 
 <header>
-    <h1>Formulário</h1>
-    <p>Formulário para teste</p>
+    <h1>Formulário das Pizzas</h1>
+    <h2>Seja Bem-vindo ao Formulário das Pizzas<br>
+        Marque as opções sobre suas pizzas favoritas!
+    </h2>
 </header>
 <body>
     <main>
         <form action="#" method="post" autocomplete="off">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" placeholder="Nome">
-            </p>
+            <section>
+                <label for="nome-id">Nome: </label>
+                <input type="text" name="nome" id="nome-id" placeholder="Digite seu nome" required>
+            </section>
 
-            <p>
+            <section>
                 <label for="idade-id">Idade: </label>
-                <input type="number" name="idade" id="idade-id" placeholder="Idade">
-            </p>
+                <input type="number" name="idade" id="idade-id" placeholder="Idade" min="10" required>
+            </section>
 
-            <p>
+            <section>
                 <label for="email-id">Email: </label>
-                <input type="email" name="email" id="email-id" placeholder="Email">
-            </p>
+                <input type="email" name="email" id="email-id" placeholder="Digite seu E-mail" required>
+            </section>
 
-            <p>
-                <label for="profissao-id">Profissão</label>
-                <input type="text"name="profissao" id="profissao-id" placeholder="Profissão">
-            </p>
+            <section>
+                <label for="profissao-id">Profissão: </label>
+                <input type="text"name="profissao" id="profissao-id" placeholder=" Digite sua profissão" required>
+            </section>
 
-            <p>
+            <section>
+                <label for="fav-pizza-id">Qual seu sabor de pizza favorito?</label>
+                <select name="fav-pizza" id="fav-pizza-id">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="calabresa">Calabresa</option>
+                        <option value="portuguesa">Portuguesa</option>
+                        <option value="moda">À Moda</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="queijo">Quatro Queijos</option>
+                </select>
+            </section>
+
+            <section>
+                <label for="frequencia-pizza-id">Qual a frequência que você come pizza?</label>
+                <ul>
+                    <li>Muito frequente<input type="radio" name="frequencia-pizza" id="frequencia-pizza-id"></li>
+                    <li>Frequente<input type="radio" name="frequencia-pizza" id="frequencia-pizza-id"></li>
+                    <li>Pouco Frequente<input type="radio" name="frequencia-pizza" id="frequencia-pizza-id"></li>
+                </ul>
+            </section>
+
+            <section>
+                <label for="#">Selecione sua opção</label>
+                <select name="#" id="#">Selecione sua opção
+                    <optgroup>
+                        <option value="1">Opção 1</option>
+                        <option value="1">Opção 2</option>
+                        <option value="1">Opção 3</option>
+                        <option value="1">Opção 4</option>
+                        <option value="1">Opção 5</option>
+                    </optgroup>
+                </select>
+            </section>
+
+            <section>
+                <label for="#">Marque as caixinhas que mais te representam</label>
+                <ul>
+                    <li>Azul<input type="checkbox" name="#" id="#"></li>
+                    <li>Verde<input type="checkbox" name="#" id="#"></li>
+                    <li>Vermelho<input type="checkbox" name="#" id="#"></li>
+                    <li>Amarelo<input type="checkbox" name="#" id="#"></li>
+                    <li>Laranja<input type="checkbox" name="#" id="#"></li>
+                    <li>Roxo<input type="checkbox" name="#" id="#"></li>
+                    <li>Ciano<input type="checkbox" name="#" id="#"></li>
+                    <li>Rosa<input type="checkbox" name="#" id="#"></li>
+                    <li>Preto<input type="checkbox" name="#" id="#"></li>
+                    <li>Branco<input type="checkbox" name="#" id="#"></li>
+                </ul>
+            </section> 
+
+            <section>
                 <label for="sugestao-id"></label>
-                <textarea name="sugestao" id="sugestao-id" cols="30" rows="10" placeholder="Deixe sua sugestão aqui"></textarea>
-            </p>
-
-            <p>
-                <p>Marque aqui suas preferencias</p>
-                <label for="#">Caixa 1</label>
-                <input type="checkbox" name="#" id="#">
-            </p>
-
-            <p>
-                <p>
-                    Marque aqui suas preferencias
-                </p>
-                <label for="#"></label>
-                <input type="radio" name="#" id="#">
-            </p>
+                <textarea name="sugestao" id="sugestao-id" cols="30" rows="10" placeholder="Tem algum comentário ou sugestão?"></textarea>
+            </section>
+            
+            <input type="submit" value="Enviar">
         </form>
     </main>
 </body>
