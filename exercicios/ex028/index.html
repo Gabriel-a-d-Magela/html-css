@@ -32,41 +32,42 @@
             </section>
 
             <section>
-                <label for="profissao-id">Profissão: </label>
-                <input type="text"name="profissao" id="profissao-id" placeholder=" Digite sua profissão" required>
+                <label for="tipo-pizza-id">Qual tipo de pizza você prefere?</label>
+                <ul>
+                    <li>Pizza tradicional<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
+                    <li>Pizza doce<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
+                    <li>Ambas<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
+                </ul>
             </section>
 
             <section>
-                <label for="fav-pizza-id">Qual seu sabor de pizza favorito?</label>
-                <select name="fav-pizza" id="fav-pizza-id">
+                <label for="fav-pizza-sal-id">Qual seu sabor de pizza TRADICIONAL favorito?</label>
+                <select name="fav-pizza-sal" id="fav-pizza-sal-id">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="calabresa">Calabresa</option>
                         <option value="portuguesa">Portuguesa</option>
                         <option value="moda">À Moda</option>
                         <option value="bacon">Bacon</option>
                         <option value="queijo">Quatro Queijos</option>
+                        <option value="marguerita">Marguerita</option>
+                        <option value="frango-com-catupiry">Frango com Catupiry</option>
+                        <option value="mucarela">Muçarela</option>
+                        <option value="napolitana">Napolitana</option>
+                        <option value="lombo-canadense">Lombo canadense</option>
                 </select>
             </section>
 
             <section>
-                <label for="frequencia-pizza-id">Qual a frequência que você come pizza?</label>
-                <ul>
-                    <li>Muito frequente<input type="radio" name="frequencia-pizza" id="frequencia-pizza-id"></li>
-                    <li>Frequente<input type="radio" name="frequencia-pizza" id="frequencia-pizza-id"></li>
-                    <li>Pouco Frequente<input type="radio" name="frequencia-pizza" id="frequencia-pizza-id"></li>
-                </ul>
-            </section>
-
-            <section>
-                <label for="#">Selecione sua opção</label>
-                <select name="#" id="#">Selecione sua opção
-                    <optgroup>
-                        <option value="1">Opção 1</option>
-                        <option value="1">Opção 2</option>
-                        <option value="1">Opção 3</option>
-                        <option value="1">Opção 4</option>
-                        <option value="1">Opção 5</option>
-                    </optgroup>
+                <label for="fav-pizza-doce-id">Qual seu sabor de pizza DOCE favorito?</label>
+                <select name="fav-pizza-doce" id="fav-pizza-doce-id">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="chocolate-com-morango">Chocolate com morango</option>
+                        <option value="romeu-e-julieta">Romeu e Julieta</option>
+                        <option value="brigadeiro">Brigadeiro</option>
+                        <option value="creme-de-avela">Creme de Avelã com frutas</option>
+                        <option value="chocolate-duplo">Chocolate duplo</option>
+                        <option value="prestigio">Prestígio</option>
+                        <option value="banofe">Banofe</option>
                 </select>
             </section>
 
@@ -90,7 +91,7 @@
                 <label for="sugestao-id"></label>
                 <textarea name="sugestao" id="sugestao-id" cols="30" rows="10" placeholder="Tem algum comentário ou sugestão?"></textarea>
             </section>
-            
+
             <input type="submit" value="Enviar">
         </form>
     </main>
