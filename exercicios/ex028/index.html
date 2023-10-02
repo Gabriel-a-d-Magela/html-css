@@ -8,22 +8,22 @@
 </head>
 
 <header>
-    <h1>Formulário das Pizzas</h1>
-    <h2>Seja Bem-vindo ao Formulário das Pizzas<br>
+    <h1>Questionário das Pizzas</h1>
+    <h2>Seja Bem-vindo ao Questionário das Pizzas<br>
         Marque as opções sobre suas pizzas favoritas!
     </h2>
 </header>
 <body>
     <main>
-        <form action="#" method="post" autocomplete="off">
+        <form action="#" method="post" autocomplete="on">
             <section>
                 <label for="nome-id">Nome: </label>
                 <input type="text" name="nome" id="nome-id" placeholder="Digite seu nome" required>
             </section>
 
             <section>
-                <label for="idade-id">Idade: </label>
-                <input type="number" name="idade" id="idade-id" placeholder="Idade" min="10" required>
+                <label for="idade-id">Idade: (Opcional)</label>
+                <input type="number" name="idade" id="idade-id" placeholder="Idade" min="10">
             </section>
 
             <section>
@@ -41,8 +41,8 @@
             </section>
 
             <section>
-                <label for="fav-pizza-sal-id">Qual seu sabor de pizza TRADICIONAL favorito?</label>
-                <select name="fav-pizza-sal" id="fav-pizza-sal-id">
+                <label for="fav-pizza-trad-id">Qual seu sabor de pizza TRADICIONAL favorito?</label>
+                <select name="fav-pizza-trad" id="fav-pizza-trad-id">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="calabresa">Calabresa</option>
                         <option value="portuguesa">Portuguesa</option>
@@ -72,24 +72,48 @@
             </section>
 
             <section>
-                <label for="#">Marque as caixinhas que mais te representam</label>
+                <label for="caixinhas_check_pizza_id">Quais sabores de pizza você já experimentou?(Marque todas que já tiver experimentado)</label>
                 <ul>
-                    <li>Azul<input type="checkbox" name="#" id="#"></li>
-                    <li>Verde<input type="checkbox" name="#" id="#"></li>
-                    <li>Vermelho<input type="checkbox" name="#" id="#"></li>
-                    <li>Amarelo<input type="checkbox" name="#" id="#"></li>
-                    <li>Laranja<input type="checkbox" name="#" id="#"></li>
-                    <li>Roxo<input type="checkbox" name="#" id="#"></li>
-                    <li>Ciano<input type="checkbox" name="#" id="#"></li>
-                    <li>Rosa<input type="checkbox" name="#" id="#"></li>
-                    <li>Preto<input type="checkbox" name="#" id="#"></li>
-                    <li>Branco<input type="checkbox" name="#" id="#"></li>
+                    <li>Calabresa<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Portuguesa<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>À Moda<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Bacon<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Quatro Queijos<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Marguerita<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Frango com Catupiry<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id"></li>
+                    <li>Muçarela<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Napolitana<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Lombo canadense<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Chocolate com morango<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Romeu e Julieta<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Brigadeiro<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Creme de Avelã com frutas<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Chocolate duplo<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Prestígio<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>
+                    <li>Banofe<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    </li>  
                 </ul>
             </section> 
 
             <section>
+                <p>Tem algum comentário ou sugestão?</p>
                 <label for="sugestao-id"></label>
-                <textarea name="sugestao" id="sugestao-id" cols="30" rows="10" placeholder="Tem algum comentário ou sugestão?"></textarea>
+                <textarea name="sugestao" id="sugestao-id" cols="50" rows="10" placeholder="Deixe seu comentário/sugestão aqui"></textarea>
             </section>
 
             <input type="submit" value="Enviar">
