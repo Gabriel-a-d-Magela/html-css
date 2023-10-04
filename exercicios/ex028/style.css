@@ -13,7 +13,7 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   height: 100vh;
+   height: 100%;
 }
 
 header {
@@ -33,4 +33,29 @@ h2 {
    font-family: Arial, Helvetica, sans-serif;
    font-size: larger;
    font-weight: lighter;
+}
+
+main {
+   background-color: rgba(70, 70, 70, 0.828);
+   min-width: 300px;
+   max-width: 1000px;
+   margin: auto;
+}
+
+form {
+   padding: 40px 40px 40px 40px;
+}
+
+label {
+   display: inline-block;
+   clear: left;
+   width: 50px;
+   text-align: left;
+
+}
+
+input {
+   display: inline-block;
+   padding: 10px 10px 10px 10px;
+   min-width: 400px;
 }
