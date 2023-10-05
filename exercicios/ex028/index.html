@@ -16,22 +16,22 @@
     <main>
         <form action="#" method="post" autocomplete="on">
             <section>
-                <label for="nome-id" class="texto">Nome</label><br>
-                <input type="text" name="nome" id="nome-id" placeholder="Digite seu nome" required>
+                <label for="nome-id" class="etiqueta">Nome</label><br>
+                <input type="text" name="nome" id="nome-id" placeholder="Digite seu nome" required class="resposta">
             </section>
 
             <section>
-                <label for="idade-id">Idade</label><br>
-                <input type="number" name="idade" id="idade-id" placeholder="Idade" min="10" required>
+                <label for="idade-id" class="etiqueta">Idade</label><br>
+                <input type="number" name="idade" id="idade-id" placeholder="Idade" min="10" required class="resposta">
             </section>
 
             <section>
-                <label for="email-id">Email</label><br>
-                <input type="email" name="email" id="email-id" placeholder="Digite seu E-mail" required>
+                <label for="email-id" class="etiqueta">Email</label><br>
+                <input type="email" name="email" id="email-id" placeholder="Digite seu E-mail" required class="resposta">
             </section>
 
             <section>
-                <label for="tipo-pizza-id">Qual tipo de pizza você prefere?</label>
+                <label for="tipo-pizza-id" class="etiqueta">Qual tipo de pizza você prefere?</label>
                 <ul>
                     <li>Pizza tradicional<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
                     <li>Pizza doce<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
@@ -40,7 +40,7 @@
             </section>
 
             <section>
-                <label for="fav-pizza-trad-id">Qual seu sabor de pizza TRADICIONAL favorito?</label>
+                <label for="fav-pizza-trad-id" class="etiqueta">Qual seu sabor de pizza TRADICIONAL favorito?</label>
                 <select name="fav-pizza-trad" id="fav-pizza-trad-id">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="calabresa">Calabresa</option>
@@ -57,7 +57,7 @@
             </section>
 
             <section>
-                <label for="fav-pizza-doce-id">Qual seu sabor de pizza DOCE favorito?</label>
+                <label for="fav-pizza-doce-id" class="etiqueta">Qual seu sabor de pizza DOCE favorito?</label>
                 <select name="fav-pizza-doce" id="fav-pizza-doce-id">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="chocolate-com-morango">Chocolate com morango</option>
@@ -71,7 +71,7 @@
             </section>
 
             <section>
-                <label for="caixinhas_check_pizza_id">Quais sabores de pizza você já experimentou?(Marque todas que já tiver experimentado)</label>
+                <label for="caixinhas_check_pizza_id" class="etiqueta">Quais sabores de pizza você já experimentou?(Marque todas que já tiver experimentado)</label>
                 <ul>
                     <li>Calabresa<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
                     </li>

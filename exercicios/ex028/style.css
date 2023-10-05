@@ -14,6 +14,7 @@ body {
    background-position: center;
    background-size: cover;
    height: 100%;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -33,29 +34,39 @@ h2 {
    font-family: Arial, Helvetica, sans-serif;
    font-size: larger;
    font-weight: lighter;
+   margin-top: 7px;
 }
 
 main {
    background-color: rgba(70, 70, 70, 0.828);
+   width: 100%;
    min-width: 300px;
-   max-width: 1000px;
+   max-width: 850px;
    margin: auto;
 }
 
 form {
    padding: 40px 40px 40px 40px;
+   text-align: center;
 }
 
-label {
+label.etiqueta {
    display: inline-block;
-   clear: left;
-   width: 50px;
+   width: 100%;
+   min-width: 300px;
+   max-width: 700px;
    text-align: left;
-
+   margin-top: 15px;
+   font-size: 1.2em;
 }
 
-input {
+input.resposta {
    display: inline-block;
    padding: 10px 10px 10px 10px;
-   min-width: 400px;
+   width: 100%;
+   min-width: 300px;
+   max-width: 700px;
+   border-radius: 8px;
+   border: 2px solid black;
+   font-size: 1.1em;
 }
