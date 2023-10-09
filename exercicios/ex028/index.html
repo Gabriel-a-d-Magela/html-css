@@ -17,31 +17,31 @@
         <form action="#" method="post" autocomplete="on">
             <section>
                 <label for="nome-id" class="etiqueta">Nome</label><br>
-                <input type="text" name="nome" id="nome-id" placeholder="Digite seu nome" required class="resposta">
+                <input type="text" name="nome" id="nome-id" placeholder="Digite seu nome" required class="resposta" maxlength="50">
             </section>
 
             <section>
                 <label for="idade-id" class="etiqueta">Idade</label><br>
-                <input type="number" name="idade" id="idade-id" placeholder="Idade" min="10" required class="resposta">
+                <input type="number" name="idade" id="idade-id" placeholder="Idade" required max="150" class="resposta">
             </section>
 
             <section>
                 <label for="email-id" class="etiqueta">Email</label><br>
-                <input type="email" name="email" id="email-id" placeholder="Digite seu E-mail" required class="resposta">
+                <input type="email" name="email" id="email-id" placeholder="Digite seu E-mail" required class="resposta" maxlength="50">
             </section>
 
             <section>
                 <label for="tipo-pizza-id" class="etiqueta">Qual tipo de pizza você prefere?</label>
                 <ul>
-                    <li>Pizza tradicional<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
-                    <li>Pizza doce<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
-                    <li>Ambas<input type="radio" name="tipo-pizza" id="tipo-pizza-id"></li>
+                    <li><input type="radio" name="tipo-pizza" id="tipo-pizza-id" class="opcao">Pizza tradicional</li>
+                    <li><input type="radio" name="tipo-pizza" id="tipo-pizza-id" class="opcao">Pizza doce</li>
+                    <li><input type="radio" name="tipo-pizza" id="tipo-pizza-id" class="opcao">Ambas</li>
                 </ul>
             </section>
 
             <section>
                 <label for="fav-pizza-trad-id" class="etiqueta">Qual seu sabor de pizza TRADICIONAL favorito?</label>
-                <select name="fav-pizza-trad" id="fav-pizza-trad-id">
+                <select name="fav-pizza-trad" id="fav-pizza-trad-id" class="resposta">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="calabresa">Calabresa</option>
                         <option value="portuguesa">Portuguesa</option>
@@ -58,7 +58,7 @@
 
             <section>
                 <label for="fav-pizza-doce-id" class="etiqueta">Qual seu sabor de pizza DOCE favorito?</label>
-                <select name="fav-pizza-doce" id="fav-pizza-doce-id">
+                <select name="fav-pizza-doce" id="fav-pizza-doce-id" class="resposta">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="chocolate-com-morango">Chocolate com morango</option>
                         <option value="romeu-e-julieta">Romeu e Julieta</option>
@@ -73,49 +73,49 @@
             <section>
                 <label for="caixinhas_check_pizza_id" class="etiqueta">Quais sabores de pizza você já experimentou?(Marque todas que já tiver experimentado)</label>
                 <ul>
-                    <li>Calabresa<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Calabresa
                     </li>
-                    <li>Portuguesa<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Portuguesa
                     </li>
-                    <li>À Moda<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">À Moda
                     </li>
-                    <li>Bacon<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Bacon
                     </li>
-                    <li>Quatro Queijos<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Quatro Queijos
                     </li>
-                    <li>Marguerita<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Marguerita
                     </li>
-                    <li>Frango com Catupiry<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id"></li>
-                    <li>Muçarela<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Frango com Catupiry</li>
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Muçarela
                     </li>
-                    <li>Napolitana<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Napolitana
                     </li>
-                    <li>Lombo canadense<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Lombo canadense
                     </li>
-                    <li>Chocolate com morango<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Chocolate com morango
                     </li>
-                    <li>Romeu e Julieta<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Romeu e Julieta
                     </li>
-                    <li>Brigadeiro<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Brigadeiro
                     </li>
-                    <li>Creme de Avelã com frutas<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Creme de Avelã com frutas
                     </li>
-                    <li>Chocolate duplo<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Chocolate duplo
                     </li>
-                    <li>Prestígio<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Prestígio
                     </li>
-                    <li>Banofe<input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id">
+                    <li><input type="checkbox" name="caixinhas_check_pizza" id="caixinhas_check_pizza_id" class="opcao">Banofe
                     </li>  
                 </ul>
             </section> 
 
             <section>
-                <p>Tem algum comentário ou sugestão?</p>
+                <p class="comentario">Tem algum comentário ou sugestão?</p>
                 <label for="sugestao-id"></label>
                 <textarea name="sugestao" id="sugestao-id" cols="50" rows="10" placeholder="Deixe seu comentário/sugestão aqui"></textarea>
             </section>
 
-            <input type="submit" value="Enviar">
+            <a href="#"><input type="submit" value="Enviar" id="enviar"></a>
         </form>
     </main>
 </body>
