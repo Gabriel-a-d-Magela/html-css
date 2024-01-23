@@ -40,6 +40,12 @@ body, html {
     margin-bottom: 30px;
 }
 
+.conteudo > a > button {
+    padding: 25px;
+    border-radius: 10px;
+    border: none;
+}
+
 .container3 {
     display: flex;
     height: 100vh;
