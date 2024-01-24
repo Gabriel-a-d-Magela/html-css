@@ -23,7 +23,7 @@ body, html {
     width: 50vw;
     height: 100vh;
 
-    background-color: rgb(170, 253, 253);
+    background-color: rgb(181, 230, 235);
 }
 
 .conteudo {
@@ -44,6 +44,16 @@ body, html {
     padding: 25px;
     border-radius: 10px;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.239) 4px 4px 7px;
+}
+
+.conteudo > a > button:hover {
+    background-color: rgb(37, 255, 255);
+    cursor: pointer;
+}
+
+.conteudo > a > button:active {
+    box-shadow: none;
 }
 
 .container3 {
